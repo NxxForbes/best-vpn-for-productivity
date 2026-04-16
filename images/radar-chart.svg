@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 650" width="700" height="650" font-family="system-ui,-apple-system,sans-serif">
+
+  <!-- Background -->
+  <rect width="700" height="650" fill="#FAFAFA" rx="10"/>
+
+  <!-- Title -->
+  <text x="350" y="32" text-anchor="middle" font-size="15" font-weight="700" fill="#1A202C">Comprehensive Score Radar (Max 5)</text>
+
+  <!--
+    Center: (350, 320), scale: 44px per point, max r=220
+    6 axes (clockwise from top):
+      k=0 Speed       angle=-90°  endpoint:(350, 100)
+      k=1 Privacy     angle=-30°  endpoint:(540.5, 210)
+      k=2 Restricted  angle= 30°  endpoint:(540.5, 430)
+      k=3 Use Cases   angle= 90°  endpoint:(350, 540)
+      k=4 Value       angle=150°  endpoint:(159.5, 430)
+      k=5 Ease of Use angle=210°  endpoint:(159.5, 210)
+  -->
+
+  <!-- ===== GRID HEXAGONS ===== -->
+  <polygon points="350,276 388.1,298 388.1,342 350,364 311.9,342 311.9,298"
+    fill="none" stroke="#E2E8F0" stroke-width="1"/>
+  <polygon points="350,232 426.2,276 426.2,364 350,408 273.8,364 273.8,276"
+    fill="none" stroke="#E2E8F0" stroke-width="1"/>
+  <polygon points="350,188 464.3,254 464.3,386 350,452 235.7,386 235.7,254"
+    fill="none" stroke="#E2E8F0" stroke-width="1"/>
+  <polygon points="350,144 502.4,232 502.4,408 350,496 197.6,408 197.6,232"
+    fill="none" stroke="#E2E8F0" stroke-width="1"/>
+  <polygon points="350,100 540.5,210 540.5,430 350,540 159.5,430 159.5,210"
+    fill="none" stroke="#CBD5E0" stroke-width="1.5"/>
+
+  <!-- ===== AXIS LINES ===== -->
+  <line x1="350" y1="320" x2="350" y2="100" stroke="#CBD5E0" stroke-width="1"/>
+  <line x1="350" y1="320" x2="540.5" y2="210" stroke="#CBD5E0" stroke-width="1"/>
+  <line x1="350" y1="320" x2="540.5" y2="430" stroke="#CBD5E0" stroke-width="1"/>
+  <line x1="350" y1="320" x2="350" y2="540" stroke="#CBD5E0" stroke-width="1"/>
+  <line x1="350" y1="320" x2="159.5" y2="430" stroke="#CBD5E0" stroke-width="1"/>
+  <line x1="350" y1="320" x2="159.5" y2="210" stroke="#CBD5E0" stroke-width="1"/>
+
+  <!-- Score labels on axes -->
+  <text x="354" y="100" font-size="9" fill="#A0AEC0">5</text>
+  <text x="354" y="144" font-size="9" fill="#A0AEC0">4</text>
+  <text x="354" y="188" font-size="9" fill="#A0AEC0">3</text>
+  <text x="354" y="232" font-size="9" fill="#A0AEC0">2</text>
+  <text x="354" y="276" font-size="9" fill="#A0AEC0">1</text>
+
+  <!-- ===== PRODUCT POLYGONS ===== -->
+
+  <!-- NordVPN (5,5,4,5,4,4) — Blue #4B7BE5 -->
+  <polygon points="350,100 540.5,210 502.4,408 350,540 197.6,408 197.6,232"
+    fill="#4B7BE5" fill-opacity="0.08" stroke="#4B7BE5" stroke-width="2"/>
+
+  <!-- ExpressVPN (4,5,2,4,3,5) — Red #E53E3E -->
+  <polygon points="350,144 540.5,210 426.2,364 350,496 235.7,386 159.5,210"
+    fill="#E53E3E" fill-opacity="0.07" stroke="#E53E3E" stroke-width="2"/>
+
+  <!-- Surflare (4,4,4,5,4,4) — Purple #805AD5 -->
+  <polygon points="350,144 502.4,232 502.4,408 350,540 197.6,408 159.5,210"
+    fill="#805AD5" fill-opacity="0.1" stroke="#805AD5" stroke-width="2.5"/>
+
+  <!-- CyberGhost (4,4,2,3,5,4) — Orange #DD6B20 -->
+  <polygon points="350,144 502.4,232 426.2,364 350,452 159.5,430 197.6,232"
+    fill="#DD6B20" fill-opacity="0.07" stroke="#DD6B20" stroke-width="2"/>
+
+  <!-- StrongVPN (4,3,3,3,3,4) — Teal #2C7A7B -->
+  <polygon points="350,144 464.3,254 464.3,386 350,452 235.7,386 197.6,232"
+    fill="#2C7A7B" fill-opacity="0.07" stroke="#2C7A7B" stroke-width="2" stroke-dasharray="5,3"/>
+
+  <!-- ===== AXIS LABELS ===== -->
+  <text x="350" y="78" text-anchor="middle" font-size="13" font-weight="600" fill="#2D3748">Speed</text>
+  <text x="558" y="208" text-anchor="start" font-size="13" font-weight="600" fill="#2D3748">Privacy</text>
+  <text x="558" y="435" text-anchor="start" font-size="13" font-weight="600" fill="#2D3748">Restricted Region</text>
+  <text x="350" y="566" text-anchor="middle" font-size="13" font-weight="600" fill="#2D3748">Versatility</text>
+  <text x="142" y="435" text-anchor="end" font-size="13" font-weight="600" fill="#2D3748">Cost-Effectiveness</text>
+  <text x="142" y="208" text-anchor="end" font-size="13" font-weight="600" fill="#2D3748">Ease of Use</text>
+
+  <!-- ===== CENTER DOT ===== -->
+  <circle cx="350" cy="320" r="3" fill="#CBD5E0"/>
+
+  <!-- ===== LEGEND (order: Nord → Express → Surflare → CyberGhost → Strong) ===== -->
+  <rect x="20" y="588" width="660" height="50" rx="6" fill="#F7FAFC" stroke="#E2E8F0" stroke-width="1"/>
+
+  <!-- NordVPN -->
+  <line x1="32" y1="613" x2="58" y2="613" stroke="#4B7BE5" stroke-width="2"/>
+  <circle cx="45" cy="613" r="4" fill="#4B7BE5"/>
+  <text x="63" y="617" font-size="11" fill="#2D3748" font-weight="600">NordVPN</text>
+  <text x="63" y="630" font-size="10" fill="#718096">Score 4.5</text>
+
+  <!-- ExpressVPN -->
+  <line x1="152" y1="613" x2="178" y2="613" stroke="#E53E3E" stroke-width="2"/>
+  <circle cx="165" cy="613" r="4" fill="#E53E3E"/>
+  <text x="183" y="617" font-size="11" fill="#2D3748" font-weight="600">ExpressVPN</text>
+  <text x="183" y="630" font-size="10" fill="#718096">Score 3.8</text>
+
+  <!-- Surflare -->
+  <line x1="302" y1="613" x2="328" y2="613" stroke="#805AD5" stroke-width="2.5"/>
+  <circle cx="315" cy="613" r="5" fill="#805AD5"/>
+  <text x="333" y="617" font-size="11" fill="#2D3748" font-weight="600">Surflare</text>
+  <text x="333" y="630" font-size="10" fill="#718096">Score 4.3</text>
+
+  <!-- CyberGhost -->
+  <line x1="432" y1="613" x2="458" y2="613" stroke="#DD6B20" stroke-width="2"/>
+  <circle cx="445" cy="613" r="4" fill="#DD6B20"/>
+  <text x="463" y="617" font-size="11" fill="#2D3748" font-weight="600">CyberGhost</text>
+  <text x="463" y="630" font-size="10" fill="#718096">Score 3.7</text>
+
+  <!-- StrongVPN -->
+  <line x1="572" y1="613" x2="598" y2="613" stroke="#2C7A7B" stroke-width="2" stroke-dasharray="4,2"/>
+  <circle cx="585" cy="613" r="4" fill="#2C7A7B"/>
+  <text x="603" y="617" font-size="11" fill="#2D3748" font-weight="600">StrongVPN</text>
+  <text x="603" y="630" font-size="10" fill="#718096">Score 3.3</text>
+
+</svg>
